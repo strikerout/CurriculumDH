@@ -1,22 +1,32 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
-header{
+
+
+header {
     background-color: #E6E6E6;
     text-align: center;
 }
 
-#logo{
+#logo {
     width: 200px;
     height: 200px;
     margin: 0 auto;
     display: block;
 }
 
-h1{
+h1 {
     background-color: #C4C4C4;
     color: #005677;
     font-size: 35px;
+    font-family: 'Righteous';
 }
 
 .tituloSeccion {
@@ -24,24 +34,68 @@ h1{
     color: #005677;
 }
 
-ul li span{
+ul li span {
     font-weight: bold;
 }
 
-.personales{
+.personales {
     font-style: italic;
 }
 
-.description{
+.description {
     text-indent: 80px;
 }
-footer{
-    background-color: #005677;
-    color: #FFFFFF;
-    position: absolute;
+
+footer {
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
+    background-color: #005677;
+    color: #FFFFFF;
     text-align: center;
     line-height: 2.5rem;
+} 
+
+i {
+    color: white;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+a.button-link {
+    background-color: #005677;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #02394e;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: my-counter;
+    padding-left: 20px;
+}
+
+ol li::before {
+    content: counter(my-counter) ". ";
+    counter-increment: my-counter;
+    font-weight: bold;
+}
+
+.sofi {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
 }
